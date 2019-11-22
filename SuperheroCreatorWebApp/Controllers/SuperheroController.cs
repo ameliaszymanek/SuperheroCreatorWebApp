@@ -56,7 +56,7 @@ namespace SuperheroCreatorWebApp.Controllers
         public ActionResult Edit(int id)
         {
             Superhero superhero = context.Superheroes.Where(i => i.Id == id).FirstOrDefault();
-            return View(id);
+            return View(superhero);
         }
 
         // POST: Superhero/Edit/5
