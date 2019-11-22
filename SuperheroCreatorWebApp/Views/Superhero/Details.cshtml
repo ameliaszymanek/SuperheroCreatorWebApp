@@ -9,6 +9,23 @@
 <div>
     <h4>Superhero</h4>
     <hr />
+
+    @if (Model.Id == 1)
+    {
+        <img src="~/Images/captainMarvel.jpg" alt="Image of Captain Marvel" height="200" />
+    }
+    @if (Model.Id == 2)
+    {
+        <img src="~/Images/theWonderDog.png" alt="Image of The Wonder Dog" height="200"/>
+    }
+
+
+
+    @*@Html.DisplayFor(model => model.Id == 2);
+        @Html<img src=""/>*@
+
+
+
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.name)
